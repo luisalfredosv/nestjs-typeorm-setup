@@ -24,7 +24,9 @@
     "migration:create": "yarn typeorm-ts-node-commonjs migration:create",
     "migration:revert": "yarn typeorm migration:revert",
     "migration:show": "yarn typeorm migration:show",
+    "migration:generate": "yarn typeorm migration:generate",
     "subscriber:create": "yarn typeorm-ts-node-commonjs subscriber:create"
+
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

@@ -29,33 +29,56 @@
 ## Installation
 
 ```bash
-$ npm install
+yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+yarn start
 
 # watch mode
-$ npm run start:dev
+yarn start:dev
 
 # production mode
-$ npm run start:prod
+yarn start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+yarn run test
 
 # e2e tests
-$ npm run test:e2e
+yarn run test:e2e
 
 # test coverage
-$ npm run test:cov
+yarn run test:cov
+```
+
+## CLI TypeORM
+
+```bash
+# run all migrations
+yarn migration:run
+
+# create new migration
+yarn migration:create ./src/database/migrations/name-migration
+
+# revert last migration created
+yarn migration:revert
+
+# shows all migrations
+yarn migration:show
+
+# generate migrations to .sql
+yarn migration:generate ./import.sql
+
+# create new subscriber
+yarn subscriber:create ./src/database/subscribers/name-subscriber
+
 ```
 
 ## Support
